@@ -5,6 +5,14 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
+    ],
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "The app needs access to your camer in order to take photos of your favorite places"
+        }
+      ]
     ]
   },
   "name": "FavoritePlaces"
