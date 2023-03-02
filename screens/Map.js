@@ -30,8 +30,8 @@ function Map({navigation}) {
             return;
         }
 
-        navigation.navigate('AddPlace', { 
-            pickedLocation: selectedLocation.lat, 
+        navigation.navigate('Addplace', { 
+            pickedLat: selectedLocation.lat, 
             pickedLng: selectedLocation.lng
         });
     }, [navigation, selectedLocation])
