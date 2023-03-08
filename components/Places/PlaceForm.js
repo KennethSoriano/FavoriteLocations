@@ -1,9 +1,12 @@
 import { useCallback, useState } from "react";
 import { ScrollView, StyleSheet, Text, TextInput, View } from "react-native";
+
 import { Colors } from "../../constants/colors";
 import Button from "../UI/Button";
 import ImagePicker from "./ImagePicker";
 import LocationPicker from "./LocationPicker";
+import { Place } from "../../models/place";
+
 
 
 function PlaceForm({onCreatePlace}) {
@@ -40,7 +43,7 @@ function PlaceForm({onCreatePlace}) {
             </View>
             <ImagePicker onTakeImage={takeImageHandler} />
             <LocationPicker onPickLocation={pickLocationHandler} />
-            <Button onPress={savePlaceHandler}>Add Place</Button>
+            <Button onPress={savePlaceHandler} style={styles.input}>Add Place</Button>
         </ScrollView>
     );
 }
